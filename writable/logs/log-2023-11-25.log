@@ -1,0 +1,946 @@
+INFO - 2023-11-25 08:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 08:52:35 --> mysqli_sql_exception: Can't create table `sijlivechat`.`tbl_asn` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Database\Migrations\2023-11-25-084903_CreateTableASN.php(55): CodeIgniter\Database\Forge->createTable('tbl_asn')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTableASN->up()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp8-1\htdocs\sijlivechat\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-11-25 09:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 09:21:18 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\user\edit.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 4 APPPATH\Controllers\c_user.php(95): view('user/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:22:41 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\user\edit.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 4 APPPATH\Controllers\c_user.php(95): view('user/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:23:08 --> Call to undefined method App\Models\m_asn::getRowObject
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\c_user.php(93): CodeIgniter\Model->__call('getRowObject', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:23:17 --> Call to undefined method App\Models\m_asn::getResult
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\c_user.php(93): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:25:35 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\user\edit.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 4 APPPATH\Controllers\c_user.php(95): view('user/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:26:22 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\user\edit.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 4 APPPATH\Controllers\c_user.php(95): view('user/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:27:01 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\user\edit.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 4 APPPATH\Controllers\c_user.php(97): view('user/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:28:53 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\user\edit.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 4 APPPATH\Controllers\c_user.php(98): view('user/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+CRITICAL - 2023-11-25 09:35:02 --> Undefined property: stdClass::$jabatan
+in APPPATH\Views\user\edit.php on line 96.
+ 1 APPPATH\Views\user\edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$jabatan', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\user\\edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\user\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 5 APPPATH\Controllers\c_user.php(97): view('user/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 09:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 09:46:06 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\c_user.php(142): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_user->update('2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_user))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 09:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 09:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 15:49:56 --> mysqli_sql_exception: Can't create table `sijlivechat`.`tbl_livechat` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Database\Migrations\2023-11-25-154456_CreateTableLivechat.php(44): CodeIgniter\Database\Forge->createTable('tbl_livechat')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTableLivechat->up()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp8-1\htdocs\sijlivechat\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-11-25 15:50:20 --> mysqli_sql_exception: Can't create table `sijlivechat`.`tbl_livechat` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Database\Migrations\2023-11-25-154456_CreateTableLivechat.php(42): CodeIgniter\Database\Forge->createTable('tbl_livechat')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTableLivechat->up()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp8-1\htdocs\sijlivechat\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-11-25 15:52:11 --> mysqli_sql_exception: Can't create table `sijlivechat`.`tbl_livechat` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Database\Migrations\2023-11-25-154456_CreateTableLivechat.php(44): CodeIgniter\Database\Forge->createTable('tbl_livechat')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTableLivechat->up()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp8-1\htdocs\sijlivechat\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-11-25 15:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 15:54:01 --> Class "App\Models\m_user" not found
+in APPPATH\Controllers\c_login.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\c_login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 15:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 17:18:49 --> Undefined variable $livechat
+in APPPATH\Views\livechat\v_livechat.php on line 72.
+ 1 APPPATH\Views\livechat\v_livechat.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $livechat', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\livechat\\v_livechat.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\livechat\\v_livechat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('livechat/v_livechat', [], true)
+ 5 APPPATH\Controllers\c_livechat.php(28): view('livechat/v_livechat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_livechat->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 17:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 17:35:58 --> Undefined variable $title
+in APPPATH\Views\main.php on line 12.
+ 1 APPPATH\Views\main.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\main.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('main', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('livechat/detail', [], true)
+ 6 APPPATH\Controllers\c_livechat.php(66): view('livechat/detail')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_livechat->detail('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 17:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 17:36:51 --> Undefined variable $title
+in APPPATH\Views\main.php on line 12.
+ 1 APPPATH\Views\main.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\main.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('main', [], true)
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('livechat/detail', [], true)
+ 6 APPPATH\Controllers\c_livechat.php(70): view('livechat/detail')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_livechat->detail('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 17:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 17:53:45 --> Undefined array key "id_aduan"
+in APPPATH\Views\livechat\edit.php on line 38.
+ 1 APPPATH\Views\livechat\edit.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_aduan"', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\livechat\\edit.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\livechat\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('livechat/edit', [], true)
+ 5 APPPATH\Controllers\c_livechat.php(81): view('livechat/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_livechat->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 17:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 18:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 19:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 20:19:59 --> mysqli_sql_exception: Table 'sijlivechat.connections' doesn't exist in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `co...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `co...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `co...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `co...', Array, false)
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\Server.php(40): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\Server->index()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-25 20:19:59 --> Table 'sijlivechat.connections' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `connections`
+WHERE `c_id` > 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `connections`
+WHERE `c_id` > 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `connections`
+WHERE `c_id` > 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `connections`
+WHERE `c_id` > :c_id:', [...], false)
+ 5 APPPATH\Controllers\Server.php(40): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Server->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-25 20:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 20:45:28 --> Too few arguments to function App\Libraries\Chat::usersConnect(), 0 passed in C:\xampp8-1\htdocs\sijlivechat\app\Libraries\Chat.php on line 78 and exactly 1 expected
+in APPPATH\Libraries\Chat.php on line 88.
+ 1 APPPATH\Libraries\Chat.php(78): App\Libraries\Chat->usersConnect()
+ 2 VENDORPATH\cboden\ratchet\src\Ratchet\WebSocket\WsServer.php(164): App\Libraries\Chat->onClose(Object(Ratchet\WebSocket\WsConnection))
+ 3 VENDORPATH\cboden\ratchet\src\Ratchet\Http\HttpServer.php(62): Ratchet\WebSocket\WsServer->onClose(Object(Ratchet\Server\IoConnection))
+ 4 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(124): Ratchet\Http\HttpServer->onClose(Object(Ratchet\Server\IoConnection))
+ 5 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(98): Ratchet\Server\IoServer->handleEnd(Object(React\Socket\Connection))
+ 6 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): Ratchet\Server\IoServer->Ratchet\Server\{closure}()
+ 7 VENDORPATH\react\stream\src\Util.php(71): Evenement\EventEmitter->emit('close', [])
+ 8 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): React\Stream\Util::React\Stream\{closure}()
+ 9 VENDORPATH\react\stream\src\DuplexResourceStream.php(141): Evenement\EventEmitter->emit('close')
+10 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): React\Stream\DuplexResourceStream->close()
+11 VENDORPATH\react\stream\src\WritableResourceStream.php(107): Evenement\EventEmitter->emit('close')
+12 VENDORPATH\react\stream\src\WritableResourceStream.php(164): React\Stream\WritableResourceStream->close()
+13 VENDORPATH\react\event-loop\src\StreamSelectLoop.php(254): React\Stream\WritableResourceStream->handleWrite(resource (stream))
+14 VENDORPATH\react\event-loop\src\StreamSelectLoop.php(213): React\EventLoop\StreamSelectLoop->waitForStreamActivity(null)
+15 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(74): React\EventLoop\StreamSelectLoop->run()
+16 APPPATH\Controllers\Server.php(30): Ratchet\Server\IoServer->run()
+17 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Server->index()
+18 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+19 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-25 20:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 20:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 21:05:03 --> mysqli_sql_exception: Unknown column 'c_ticket' in 'where clause' in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8-1\htdocs\sijlivechat\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8-1\htdocs\sijlivechat\app\Libraries\Chat.php(94): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp8-1\htdocs\sijlivechat\app\Libraries\Chat.php(46): App\Libraries\Chat->usersConnect(Array)
+#7 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\WebSocket\WsServer.php(142): App\Libraries\Chat->onOpen(Object(Ratchet\WebSocket\WsConnection))
+#8 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Http\HttpServer.php(51): Ratchet\WebSocket\WsServer->onOpen(Object(Ratchet\Server\IoConnection), Object(GuzzleHttp\Psr7\Request))
+#9 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(112): Ratchet\Http\HttpServer->onMessage(Object(Ratchet\Server\IoConnection), 'GET /?access_to...')
+#10 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(95): Ratchet\Server\IoServer->handleData('GET /?access_to...', Object(React\Socket\Connection))
+#11 C:\xampp8-1\htdocs\sijlivechat\vendor\evenement\evenement\src\EventEmitterTrait.php(143): Ratchet\Server\IoServer->Ratchet\Server\{closure}('GET /?access_to...')
+#12 C:\xampp8-1\htdocs\sijlivechat\vendor\react\stream\src\Util.php(71): Evenement\EventEmitter->emit('data', Array)
+#13 C:\xampp8-1\htdocs\sijlivechat\vendor\evenement\evenement\src\EventEmitterTrait.php(143): React\Stream\Util::React\Stream\{closure}('GET /?access_to...')
+#14 C:\xampp8-1\htdocs\sijlivechat\vendor\react\stream\src\DuplexResourceStream.php(196): Evenement\EventEmitter->emit('data', Array)
+#15 C:\xampp8-1\htdocs\sijlivechat\vendor\react\event-loop\src\StreamSelectLoop.php(246): React\Stream\DuplexResourceStream->handleData(Resource id #183)
+#16 C:\xampp8-1\htdocs\sijlivechat\vendor\react\event-loop\src\StreamSelectLoop.php(213): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#17 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(74): React\EventLoop\StreamSelectLoop->run()
+#18 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\Server.php(30): Ratchet\Server\IoServer->run()
+#19 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\Server->index()
+#20 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+#21 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2023-11-25 21:05:03 --> Unknown column 'c_ticket' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `connections`
+WHERE `c_ticket` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `connections`
+WHERE `c_ticket` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `connections`
+WHERE `c_ticket` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `connections`
+WHERE `c_ticket` = :c_ticket:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Chat.php(94): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Libraries\Chat.php(46): App\Libraries\Chat->usersConnect([...])
+ 8 VENDORPATH\cboden\ratchet\src\Ratchet\WebSocket\WsServer.php(142): App\Libraries\Chat->onOpen(Object(Ratchet\WebSocket\WsConnection))
+ 9 VENDORPATH\cboden\ratchet\src\Ratchet\Http\HttpServer.php(51): Ratchet\WebSocket\WsServer->onOpen(Object(Ratchet\Server\IoConnection), Object(GuzzleHttp\Psr7\Request))
+10 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(112): Ratchet\Http\HttpServer->onMessage(Object(Ratchet\Server\IoConnection), 'GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: SOEU1eb7t7yAM6iwfh+p1A==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+')
+11 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(95): Ratchet\Server\IoServer->handleData('GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: SOEU1eb7t7yAM6iwfh+p1A==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+', Object(React\Socket\Connection))
+12 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): Ratchet\Server\IoServer->Ratchet\Server\{closure}('GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: SOEU1eb7t7yAM6iwfh+p1A==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+')
+13 VENDORPATH\react\stream\src\Util.php(71): Evenement\EventEmitter->emit('data', [...])
+14 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): React\Stream\Util::React\Stream\{closure}('GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: SOEU1eb7t7yAM6iwfh+p1A==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+')
+15 VENDORPATH\react\stream\src\DuplexResourceStream.php(196): Evenement\EventEmitter->emit('data', [...])
+16 VENDORPATH\react\event-loop\src\StreamSelectLoop.php(246): React\Stream\DuplexResourceStream->handleData(resource (stream))
+17 VENDORPATH\react\event-loop\src\StreamSelectLoop.php(213): React\EventLoop\StreamSelectLoop->waitForStreamActivity(null)
+18 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(74): React\EventLoop\StreamSelectLoop->run()
+19 APPPATH\Controllers\Server.php(30): Ratchet\Server\IoServer->run()
+20 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Server->index()
+21 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+22 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-25 21:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 21:06:00 --> mysqli_sql_exception: Unknown column 'c_ticket' in 'where clause' in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8-1\htdocs\sijlivechat\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8-1\htdocs\sijlivechat\app\Libraries\Chat.php(93): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp8-1\htdocs\sijlivechat\app\Libraries\Chat.php(45): App\Libraries\Chat->usersConnect()
+#7 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\WebSocket\WsServer.php(142): App\Libraries\Chat->onOpen(Object(Ratchet\WebSocket\WsConnection))
+#8 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Http\HttpServer.php(51): Ratchet\WebSocket\WsServer->onOpen(Object(Ratchet\Server\IoConnection), Object(GuzzleHttp\Psr7\Request))
+#9 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(112): Ratchet\Http\HttpServer->onMessage(Object(Ratchet\Server\IoConnection), 'GET /?access_to...')
+#10 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(95): Ratchet\Server\IoServer->handleData('GET /?access_to...', Object(React\Socket\Connection))
+#11 C:\xampp8-1\htdocs\sijlivechat\vendor\evenement\evenement\src\EventEmitterTrait.php(143): Ratchet\Server\IoServer->Ratchet\Server\{closure}('GET /?access_to...')
+#12 C:\xampp8-1\htdocs\sijlivechat\vendor\react\stream\src\Util.php(71): Evenement\EventEmitter->emit('data', Array)
+#13 C:\xampp8-1\htdocs\sijlivechat\vendor\evenement\evenement\src\EventEmitterTrait.php(143): React\Stream\Util::React\Stream\{closure}('GET /?access_to...')
+#14 C:\xampp8-1\htdocs\sijlivechat\vendor\react\stream\src\DuplexResourceStream.php(196): Evenement\EventEmitter->emit('data', Array)
+#15 C:\xampp8-1\htdocs\sijlivechat\vendor\react\event-loop\src\StreamSelectLoop.php(246): React\Stream\DuplexResourceStream->handleData(Resource id #183)
+#16 C:\xampp8-1\htdocs\sijlivechat\vendor\react\event-loop\src\StreamSelectLoop.php(213): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#17 C:\xampp8-1\htdocs\sijlivechat\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(74): React\EventLoop\StreamSelectLoop->run()
+#18 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\Server.php(30): Ratchet\Server\IoServer->run()
+#19 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\Server->index()
+#20 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+#21 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2023-11-25 21:06:00 --> Unknown column 'c_ticket' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `connections`
+WHERE `c_ticket` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `connections`
+WHERE `c_ticket` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `connections`
+WHERE `c_ticket` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `connections`
+WHERE `c_ticket` = :c_ticket:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Chat.php(93): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Libraries\Chat.php(45): App\Libraries\Chat->usersConnect()
+ 8 VENDORPATH\cboden\ratchet\src\Ratchet\WebSocket\WsServer.php(142): App\Libraries\Chat->onOpen(Object(Ratchet\WebSocket\WsConnection))
+ 9 VENDORPATH\cboden\ratchet\src\Ratchet\Http\HttpServer.php(51): Ratchet\WebSocket\WsServer->onOpen(Object(Ratchet\Server\IoConnection), Object(GuzzleHttp\Psr7\Request))
+10 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(112): Ratchet\Http\HttpServer->onMessage(Object(Ratchet\Server\IoConnection), 'GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: 9I8iUHIGaQuAn+iLVv2mSw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+')
+11 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(95): Ratchet\Server\IoServer->handleData('GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: 9I8iUHIGaQuAn+iLVv2mSw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+', Object(React\Socket\Connection))
+12 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): Ratchet\Server\IoServer->Ratchet\Server\{closure}('GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: 9I8iUHIGaQuAn+iLVv2mSw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+')
+13 VENDORPATH\react\stream\src\Util.php(71): Evenement\EventEmitter->emit('data', [...])
+14 VENDORPATH\evenement\evenement\src\EventEmitterTrait.php(143): React\Stream\Util::React\Stream\{closure}('GET /?access_token=1&ticket=3 HTTP/1.1
+Host: localhost:8081
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Upgrade: websocket
+Origin: http://localhost:8080
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: ci_session=mkd77gfktbi1hck5ultk5gdbmtdnpbf3
+Sec-WebSocket-Key: 9I8iUHIGaQuAn+iLVv2mSw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+')
+15 VENDORPATH\react\stream\src\DuplexResourceStream.php(196): Evenement\EventEmitter->emit('data', [...])
+16 VENDORPATH\react\event-loop\src\StreamSelectLoop.php(246): React\Stream\DuplexResourceStream->handleData(resource (stream))
+17 VENDORPATH\react\event-loop\src\StreamSelectLoop.php(213): React\EventLoop\StreamSelectLoop->waitForStreamActivity(null)
+18 VENDORPATH\cboden\ratchet\src\Ratchet\Server\IoServer.php(74): React\EventLoop\StreamSelectLoop->run()
+19 APPPATH\Controllers\Server.php(30): Ratchet\Server\IoServer->run()
+20 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Server->index()
+21 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Server))
+22 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-25 21:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 21:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 22:23:10 --> mysqli_sql_exception: Unknown column 'tbl_kategori_nama_kategori' in 'field list' in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_liv...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_liv...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_liv...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_liv...', Array, false)
+#4 C:\xampp8-1\htdocs\sijlivechat\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8-1\htdocs\sijlivechat\app\Models\m_livechat.php(26): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\c_livechat.php(23): App\Models\m_livechat->getFullData()
+#7 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\c_livechat->index()
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htd...')
+#12 {main}
+CRITICAL - 2023-11-25 22:23:10 --> Unknown column 'tbl_kategori_nama_kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_livechat`.*, `tbl_kategori_nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+JOIN `tbl_user` ON `tbl_livechat`.`operator_id` = `tbl_user`.`id_user`
+WHERE `tbl_livechat`.`status` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_livechat`.*, `tbl_kategori_nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+JOIN `tbl_user` ON `tbl_livechat`.`operator_id` = `tbl_user`.`id_user`
+WHERE `tbl_livechat`.`status` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_livechat`.*, `tbl_kategori_nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+JOIN `tbl_user` ON `tbl_livechat`.`operator_id` = `tbl_user`.`id_user`
+WHERE `tbl_livechat`.`status` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_livechat`.*, `tbl_kategori_nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+JOIN `tbl_user` ON `tbl_livechat`.`operator_id` = `tbl_user`.`id_user`
+WHERE `tbl_livechat`.`status` = :tbl_livechat.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\m_livechat.php(26): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\c_livechat.php(23): App\Models\m_livechat->getFullData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_livechat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 22:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 22:44:47 --> Undefined variable $laporan
+in APPPATH\Views\laporan\v_laporan.php on line 41.
+ 1 APPPATH\Views\laporan\v_laporan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $laporan', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\laporan\\v_laporan.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Controllers\c_laporan.php(21): view('laporan/v_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 22:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 22:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 23:17:36 --> Cannot use object of type stdClass as array
+in APPPATH\Views\laporan\v_laporan.php on line 85.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 4 APPPATH\Controllers\c_laporan.php(23): view('laporan/v_laporan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 23:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 23:37:45 --> Undefined variable $bulan
+in APPPATH\Views\laporan\v_laporan.php on line 50.
+ 1 APPPATH\Views\laporan\v_laporan.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bulan', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\laporan\\v_laporan.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Controllers\c_laporan.php(47): view('laporan/v_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 23:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 23:50:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023-02%) total FROM tbl_kategori a' at line 1 in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, (SELE...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELE...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELE...')
+#3 C:\xampp8-1\htdocs\sijlivechat\app\Models\m_livechat.php(62): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELE...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\c_laporan.php(41): App\Models\m_livechat->getJumlahAduanKategori('2023-02')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htd...')
+#10 {main}
+CRITICAL - 2023-11-25 23:50:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023-02%) total FROM tbl_kategori a' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND tanggal_aduan like %2023-02%) total FROM tbl_kategori a', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND tanggal_aduan like %2023-02%) total FROM tbl_kategori a')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND tanggal_aduan like %2023-02%) total FROM tbl_kategori a')
+ 4 APPPATH\Models\m_livechat.php(62): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND tanggal_aduan like %2023-02%) total FROM tbl_kategori a')
+ 5 APPPATH\Controllers\c_laporan.php(41): App\Models\m_livechat->getJumlahAduanKategori('2023-02')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+ERROR - 2023-11-25 23:51:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023-02%) total FROM tbl_kategori a' at line 1 in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, (SELE...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELE...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELE...')
+#3 C:\xampp8-1\htdocs\sijlivechat\app\Models\m_livechat.php(62): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELE...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\c_laporan.php(41): App\Models\m_livechat->getJumlahAduanKategori('2023-02')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htd...')
+#10 {main}
+CRITICAL - 2023-11-25 23:51:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023-02%) total FROM tbl_kategori a' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like %2023-02%) total FROM tbl_kategori a', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like %2023-02%) total FROM tbl_kategori a')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like %2023-02%) total FROM tbl_kategori a')
+ 4 APPPATH\Models\m_livechat.php(62): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like %2023-02%) total FROM tbl_kategori a')
+ 5 APPPATH\Controllers\c_laporan.php(41): App\Models\m_livechat->getJumlahAduanKategori('2023-02')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+ERROR - 2023-11-25 23:51:49 --> mysqli_sql_exception: Unknown column 'a.tanggal_aduan' in 'where clause' in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, (SELE...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELE...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELE...')
+#3 C:\xampp8-1\htdocs\sijlivechat\app\Models\m_livechat.php(62): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELE...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\c_laporan.php(41): App\Models\m_livechat->getJumlahAduanKategori('2023-02')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htd...')
+#10 {main}
+CRITICAL - 2023-11-25 23:51:49 --> Unknown column 'a.tanggal_aduan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like \'%2023-02%\') total FROM tbl_kategori a', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like \'%2023-02%\') total FROM tbl_kategori a')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like \'%2023-02%\') total FROM tbl_kategori a')
+ 4 APPPATH\Models\m_livechat.php(62): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND a.tanggal_aduan like \'%2023-02%\') total FROM tbl_kategori a')
+ 5 APPPATH\Controllers\c_laporan.php(41): App\Models\m_livechat->getJumlahAduanKategori('2023-02')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-25 23:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 23:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
