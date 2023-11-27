@@ -28,7 +28,7 @@
                 <!-- ============================================================== -->
                 <li>
                     <a class="profile-pic" href="#">
-                        <span class="text-white font-medium"><?= session('username') ?> - <?= session('nama_role') ?></span></a>
+                        <span class="text-white font-medium"><?= session('username') ?> - <?= session('nama_role') . ' ' . session('nama_kategori')?></span></a>
                 </li>
                 <!-- ============================================================== -->
                 <!-- User profile and search -->

@@ -2,14 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Models\m_kelolakategori;
 use App\Models\m_kelolauser;
 
 class c_login extends BaseController
 {
     protected $user; // variable global yang bisa diakses seluruh function
+    protected $kategori; // variable global yang bisa diakses seluruh function
     public function __construct()
     {
         $this->user = new m_kelolauser(); // ini untuk berkomunikasi dengan model m_kelolauser
+        $this->kategori = new m_kelolakategori(); // ini untuk berkomunikasi dengan model m_kelolakategori
     }
 
     public function index() // ini yang dituju oleh routes.php
@@ -35,7 +38,9 @@ class c_login extends BaseController
         session()->set('id_role', $user['role_id']); // Menyimpan data id_role yang ada di $user ke session 
         session()->set('nama_role', $user['nama_role']); // Menyimpan data nama_role yang ada di $user ke session 
         if ($user['role_id'] == 2) {
-            session()->set('id_kategori', $user['kategori_id']); // Menyimpan data id_kategori yang ada di $user ke session 
+            $kategori = $this->kategori->find($user['kategori_id']);
+            session()->set('id_kategori', $kategori['id_kategori']); // Menyimpan data id_kategori yang ada di $kategori ke session 
+            session()->set('nama_kategori', $kategori['nama_kategori']); // Menyimpan data nama_kategori yang ada di $kategori ke session 
         }
         return redirect()->to('/dashboard'); // mengarahkan ke routes.php dengan method get ke alamat /dashboard
     }
