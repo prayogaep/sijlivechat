@@ -1,0 +1,168 @@
+ERROR - 2023-11-27 14:47:21 --> mysqli_sql_exception: Table 'tbl_user' already exists in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Database\Migrations\2023-11-27-144511_CreateUsersTable.php(38): CodeIgniter\Database\Forge->createTable('tbl_user')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp8-1\htdocs\sijlivechat\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-11-27 14:49:03 --> mysqli_sql_exception: Can't create table `sijlivechat`.`tbl_asn` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp8-1\htdocs\sijlivechat\app\Database\Migrations\2023-11-25-084903_CreateTableASN.php(59): CodeIgniter\Database\Forge->createTable('tbl_asn')
+#5 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateTableASN->up()
+#6 C:\xampp8-1\htdocs\sijlivechat\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp8-1\htdocs\sijlivechat\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-11-27 15:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 15:13:29 --> Undefined array key "id_user"
+in APPPATH\Controllers\c_login.php on line 33.
+ 1 APPPATH\Controllers\c_login.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_user"', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Controllers\\c_login.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_login->cekLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-27 15:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 15:27:11 --> Undefined variable $asn
+in APPPATH\Views\user\edit.php on line 49.
+ 1 APPPATH\Views\user\edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asn', 'C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\user\\edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp8-1\\htdocs\\sijlivechat\\app\\Views\\user\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/edit', [], true)
+ 5 APPPATH\Controllers\c_kelolauser.php(108): view('user/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_kelolauser->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_kelolauser))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-27 15:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-27 15:45:14 --> mysqli_sql_exception: Unknown column 'tbl_user.username' in 'field list' in C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp8-1\htdocs\sijlivechat\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_liv...', 0)
+#1 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_liv...')
+#2 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_liv...')
+#3 C:\xampp8-1\htdocs\sijlivechat\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_liv...', Array, false)
+#4 C:\xampp8-1\htdocs\sijlivechat\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8-1\htdocs\sijlivechat\app\Models\m_livechat.php(31): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp8-1\htdocs\sijlivechat\app\Controllers\c_livechat.php(20): App\Models\m_livechat->getFullData('3', 0)
+#7 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(934): App\Controllers\c_livechat->index()
+#8 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+#9 C:\xampp8-1\htdocs\sijlivechat\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8-1\htdocs\sijlivechat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8-1\htdocs\sijlivechat\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htd...')
+#12 {main}
+CRITICAL - 2023-11-27 15:45:14 --> Unknown column 'tbl_user.username' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_livechat`.*, `tbl_kategori`.`nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+WHERE `tbl_livechat`.`status` = 0
+AND `tbl_livechat`.`user_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_livechat`.*, `tbl_kategori`.`nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+WHERE `tbl_livechat`.`status` = 0
+AND `tbl_livechat`.`user_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_livechat`.*, `tbl_kategori`.`nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+WHERE `tbl_livechat`.`status` = 0
+AND `tbl_livechat`.`user_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_livechat`.*, `tbl_kategori`.`nama_kategori`, `tbl_user`.`username`, `tbl_asn`.*
+FROM `tbl_livechat`
+JOIN `tbl_kategori` ON `tbl_livechat`.`kategori_id` = `tbl_kategori`.`id_kategori`
+JOIN `tbl_asn` ON `tbl_livechat`.`user_id` = `tbl_asn`.`user_id`
+WHERE `tbl_livechat`.`status` = :tbl_livechat.status:
+AND `tbl_livechat`.`user_id` = :tbl_livechat.user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\m_livechat.php(31): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\c_livechat.php(20): App\Models\m_livechat->getFullData('3', 0)
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_livechat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_livechat))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8-1\\htdocs\\sijlivechat\\public\\index.php')
+INFO - 2023-11-27 15:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 15:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

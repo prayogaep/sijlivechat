@@ -13,15 +13,15 @@
                 </li>
                 <?php if (session('id_role') == 1) { ?>
                     <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link <?= uri_string() == 'user' ? 'active' : '' ?>" href="/user" aria-expanded="false">
-                            <i class="fa fa-users" aria-hidden="true"></i>
-                            <span class="hide-menu">Kelola User</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark sidebar-link <?= uri_string() == 'kategori' ? 'active' : '' ?>" href="/kategori" aria-expanded="false">
                             <i class="fa fa-table" aria-hidden="true"></i>
                             <span class="hide-menu">Kelola Kategori Aduan</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link <?= uri_string() == 'user' ? 'active' : '' ?>" href="/user" aria-expanded="false">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span class="hide-menu">Kelola User</span>
                         </a>
                     </li>
                 <?php } ?>

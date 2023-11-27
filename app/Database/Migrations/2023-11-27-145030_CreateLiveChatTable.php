@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateTableLivechat extends Migration
+class CreateLiveChatTable extends Migration
 {
     public function up()
     {

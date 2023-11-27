@@ -40,7 +40,7 @@
             <div class="col-md-12 col-lg-12 col-sm-12">
                 <div class="white-box">
                     <div class="d-md-flex mb-3">
-                        <h3 class="box-title mb-0">Tabel User</h3>
+                        <h3 class="box-title mb-0">Tabel User Admin</h3>
                         <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
                             <a href="/user/create" class="btn btn-primary btn-sm">Tambah User</a>
                             <!-- <select class="form-select shadow-none row border-top">
@@ -66,11 +66,93 @@
                                 <!-- Menampilkan data user -->
                                 <?php
                                 $no = 1;
-                                foreach ($users as $u) { ?>
+                                foreach ($users_admin as $u) { ?>
                                     <tr>
                                         <td><?= $no++; ?></td>
                                         <td class="txt-oflo"><?= $u['username']; ?></td>
                                         <td class="txt-oflo"><?= $u['nama_role']; ?></td>
+                                        <td class="txt-oflo">
+                                            <?php if ($u['id_user'] != session('id_user')) { ?>
+                                                <a href="/user/edit/<?= $u['id_user']; ?>" class="btn btn-warning btn-sm">Edit</a>
+                                                <a href="/user/delete/<?= $u['id_user'] ?>" class="btn btn-danger btn-sm text-white" onclick="return confirm('Yakin ingin menghapus data?')">Delete</a>
+                                            <?php } ?>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <div class="white-box">
+                    <div class="d-md-flex mb-3">
+                        <h3 class="box-title mb-0">Tabel User Operator</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table no-wrap">
+                            <thead>
+                                <tr>
+                                    <th class="border-top-0">#</th>
+                                    <th class="border-top-0">Username</th>
+                                    <th class="border-top-0">Role</th>
+                                    <th class="border-top-0">Kategori</th>
+                                    <th class="border-top-0">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Menampilkan data user -->
+                                <?php
+                                $no = 1;
+                                foreach ($users_operator as $u) { ?>
+                                    <tr>
+                                        <td><?= $no++; ?></td>
+                                        <td class="txt-oflo"><?= $u['username']; ?></td>
+                                        <td class="txt-oflo"><?= $u['nama_role']; ?></td>
+                                        <td class="txt-oflo"><?= $u['nama_kategori']; ?></td>
+                                        <td class="txt-oflo">
+                                            <a href="/user/edit/<?= $u['id_user']; ?>" class="btn btn-warning btn-sm">Edit</a>
+                                            <a href="/user/delete/<?= $u['id_user'] ?>" class="btn btn-danger btn-sm text-white" onclick="return confirm('Yakin ingin menghapus data?')">Delete</a>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <div class="white-box">
+                    <div class="d-md-flex mb-3">
+                        <h3 class="box-title mb-0">Tabel User ASN</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table no-wrap">
+                            <thead>
+                                <tr>
+                                    <th class="border-top-0">#</th>
+                                    <th class="border-top-0">Username</th>
+                                    <th class="border-top-0">Role</th>
+                                    <th class="border-top-0">Nama</th>
+                                    <th class="border-top-0">Asal Dinas</th>
+                                    <th class="border-top-0">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Menampilkan data user -->
+                                <?php
+                                $no = 1;
+                                foreach ($users_asn as $u) { ?>
+                                    <tr>
+                                        <td><?= $no++; ?></td>
+                                        <td class="txt-oflo"><?= $u['username']; ?></td>
+                                        <td class="txt-oflo"><?= $u['nama_role']; ?></td>
+                                        <td class="txt-oflo"><?= $u['nama']; ?></td>
+                                        <td class="txt-oflo"><?= $u['asal_dinas']; ?></td>
                                         <td class="txt-oflo">
                                             <a href="/user/edit/<?= $u['id_user']; ?>" class="btn btn-warning btn-sm">Edit</a>
                                             <a href="/user/delete/<?= $u['id_user'] ?>" class="btn btn-danger btn-sm text-white" onclick="return confirm('Yakin ingin menghapus data?')">Delete</a>

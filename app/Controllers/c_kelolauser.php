@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\m_asn;
+use App\Models\m_kelolakategori;
 use App\Models\m_role;
 use App\Models\m_kelolauser;
 
@@ -11,17 +12,21 @@ class c_kelolauser extends BaseController
     protected $user; // variable global yang bisa di akses oleh semua function
     protected $role; // variable global yang bisa di akses oleh semua function
     protected $asn; // variable global yang bisa di akses oleh semua function
+    protected $kategori; // variable global yang bisa di akses oleh semua function
     public function __construct()
     {
         $this->user = new m_kelolauser(); // jalur untuk berkomunikasi ke model m_kelolauser
         $this->role = new m_role(); // jalur untuk berkomunikasi ke model m_role
         $this->asn = new m_asn(); // jalur untuk berkomunikasi ke model m_asn
+        $this->kategori = new m_kelolakategori(); // jalur untuk berkomunikasi ke model m_kelolakategori
     }
     public function index() // ini yang dituju oleh routes.php
     {
         $data = [
             'title' => 'Kelola User', // title untuk di tampilkan di tab browser
-            'users' => $this->user->getFullData(), // ini berangkat ke model m_kelolauser dan masuk ke function getFullData()
+            'users_admin' => $this->user->getFullData(null, 1), // ini berangkat ke model m_kelolauser dan masuk ke function getFullData()
+            'users_operator' => $this->user->getFullData(null, 2), // ini berangkat ke model m_kelolauser dan masuk ke function getFullData()
+            'users_asn' => $this->user->getFullData(null, 3), // ini berangkat ke model m_kelolauser dan masuk ke function getFullData()
         ];
         return view('user/v_user', $data); // ini akan mengarahkan ke folder views->user->v_user dengan membawa $data
     }
@@ -30,6 +35,7 @@ class c_kelolauser extends BaseController
         $data = [
             'title' => 'Tambah User', // title untuk di tampilkan di tab browser
             'roles' => $this->role->findAll(), // ini mengambil semua data ke model m_role
+            'kategori' => json_encode($this->kategori->findAll()), // ini mengambil semua data ke model m_kelolakategori
         ];
         return view('user/create', $data); // ini akan mengarahkan ke folder views->user->create dengan membawa $data
     }
@@ -46,6 +52,11 @@ class c_kelolauser extends BaseController
             // role_id yang kiri adalah yang sesuai dengan kolom yang ada di tbl_user
             'role_id' => $this->request->getPost('role_id'), // role_id yang kanan menangkap nilai dari input yang name nya role_id
         ];
+
+        if ($this->request->getPost('role_id') == 2) {
+            // kategori_id yang kiri adalah yang sesuai dengan kolom yang ada di tbl_user
+            $data['kategori_id'] = $this->request->getPost('kategori_id'); // kategori_id yang kanan menangkap nilai dari input yang name nya kategori_id
+        }
 
         $id = $this->user->insert($data); // mengirim data ke model m_kelolauser untuk disimpan ke database
         if ($this->request->getPost('role_id') == 3) {
@@ -83,10 +94,14 @@ class c_kelolauser extends BaseController
     public function edit($id) // ini yang dituju oleh routes.php dan membawa data yang dipilih dari tabel
     {
         $user = $this->user->find($id); // ini mengambil semua data ke model m_kelolauser
+        $kategori = $this->kategori->findAll(); // ini mengambil semua data ke model m_kelolakategori
         $data = [
             'title' => 'Edit User', // title untuk di tampilkan di tab browser
             'roles' => $this->role->findAll(), // ini mengambil semua data ke model m_role
             'user' => $user,
+            'asn' => null,
+            'kategori' => $kategori,
+            'objKategori' => json_encode($kategori), // ini mengambil semua data ke model m_kelolakategori
         ];
 
         if ($user['role_id'] == 3) {
@@ -113,6 +128,10 @@ class c_kelolauser extends BaseController
             // password yang kiri adalah yang sesuai dengan kolom yang ada di tbl_user 
             $data['password'] =  md5($this->request->getPost('password')); // password yang kanan menangkap nilai dari input yang name nya password dan nilai aslinya disembunyikan oleh md5
 
+        }
+        if ($this->request->getPost('role_id') == 2) {
+            // kategori_id yang kiri adalah yang sesuai dengan kolom yang ada di tbl_user
+            $data['kategori_id'] = $this->request->getPost('kategori_id'); // kategori_id yang kanan menangkap nilai dari input yang name nya kategori_id
         }
 
         $this->user->update($id, $data); // mengirim data ke model m_kelolauser untuk diubah ke database berdasarkan id yang dipilih

@@ -194,14 +194,16 @@
   <script src="<?= base_url() ?>assets/plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
   <script src="<?= base_url() ?>assets/js/pages/dashboards/dashboard1.js"></script>
   <script>
-    
-
-    function render(val, obj = {}) {
+    function render(val, obj = {}, opt = {}) {
       $(".target").html("");
+      if (typeof obj === 'string') {
+        obj = JSON.parse(obj);
+      }
+      if (typeof opt === 'string') {
+        opt = JSON.parse(opt);
+      }
+
       if (val.value == 3) {
-        if (typeof obj === 'string') {
-          obj = JSON.parse(obj);
-        }
         $(".target").append(`
                         <div class="mb-3">
                             <label for="nip" class="form-label">NIP</label>
@@ -240,6 +242,18 @@
                             <input type="text" class="form-control" id="jabatan" value="${ obj.jabatan ? obj.jabatan : "" }" name="jabatan" required>
                         </div>
                 `);
+      } else if(val.value == 2) {
+        let option = '';
+        for (let index = 0; index < obj.length; index++) {
+             option += `<option value="${obj[index].id_kategori}" ${opt.kategori_id == obj[index].id_kategori ? "selected" : ""}>${obj[index].nama_kategori}</option>`;
+        }
+        $('.target').append(`<div class="mb-3">
+                            <label for="kategori_id" class="form-label">Kategori Operator</label>
+                            <select class="form-control" name="kategori_id" id="kategori_id" required>
+                                <option value="" selected disabled>-Pilih Kategori-</option>
+                                ${option}
+                            </select>
+                        </div>`)
       }
     }
   </script>

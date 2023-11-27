@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class AddUsers extends Migration
+class CreateUsersTable extends Migration
 {
     public function up()
     {
@@ -26,9 +26,15 @@ class AddUsers extends Migration
                 'type'       => 'INT',
                 'constraint' => 11,
             ],
+            'kategori_id' => [
+                'type'       => 'INT',
+                'constraint' => 11,
+                'null'       => true,
+            ],
         ]);
         $this->forge->addKey('id_user', true);
         $this->forge->addForeignKey('role_id', 'tbl_role', 'id_role');
+        $this->forge->addForeignKey('kategori_id', 'tbl_kategori', 'id_kategori');
         $this->forge->createTable('tbl_user');
     }
 

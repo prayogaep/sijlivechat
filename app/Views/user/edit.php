@@ -46,14 +46,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="role_id" class="form-label">Role</label>
-                            <select class="form-control" name="role_id" id="role_id" onchange='render(this, <?= $asn ? $objAsn : ''?>)' required>
+                            <select class="form-control" name="role_id" id="role_id" onchange='render(this, <?= $asn ? $objAsn : $objKategori; ?>, <?= json_encode($user) ?>)' required>
                                 <option value="" selected disabled>-Pilih Role-</option>
                                 <!-- $role ini yang di bawa dari $data yang ada di controller function create -->
                                 <?php foreach ($roles as $r) { ?>
-                                    <!-- Kondisi untuk filter role selain klien -->
-                                    <?php if (strtolower($r['nama_role']) != strtolower('klien')) { ?>
-                                        <option value="<?= $r['id_role']; ?>" <?= $r['id_role'] == $user['role_id'] ? 'selected' : '' ?>><?= $r['nama_role']; ?></option>
-                                    <?php } ?>
+                                    <option value="<?= $r['id_role']; ?>" <?= $r['id_role'] == $user['role_id'] ? 'selected' : '' ?>><?= $r['nama_role']; ?></option>
                                 <?php } ?>
                             </select>
                         </div>
@@ -94,6 +91,17 @@
                                 <div class="mb-3">
                                     <label for="jabatan" class="form-label">Jabatan</label>
                                     <input type="text" class="form-control" id="jabatan" value="<?= $asn->jabatan; ?>" name="jabatan" required>
+                                </div>
+                            <?php } else if ($user['role_id'] == 2) { ?>
+                                <div class="mb-3">
+                                    <label for="kategori_id" class="form-label">Kategori Operator</label>
+                                    <select class="form-control" name="kategori_id" id="kategori_id" required>
+                                        <option value="" selected disabled>-Pilih Kategori-</option>
+                                        <!-- $role ini yang di bawa dari $data yang ada di controller function create -->
+                                        <?php foreach ($kategori as $k) { ?>
+                                            <option value="<?= $k['id_kategori']; ?>" <?= $k['id_kategori'] == $user['kategori_id'] ? 'selected' : '' ?>><?= $k['nama_kategori']; ?></option>
+                                        <?php } ?>
+                                    </select>
                                 </div>
                             <?php } ?>
                         </div>

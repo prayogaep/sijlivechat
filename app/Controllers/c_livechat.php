@@ -17,16 +17,19 @@ class c_livechat extends BaseController
     public function index() // ini yang dituju oleh routes.php
     {
         if (session('id_role') == 3) {
-            $livechat = $this->livechat->getFullData(session('id_user'));// ini berangkat ke model m_kelolauser
-            $livechat_selesai = $this->livechat->getFullData(session('id_user'), 1);// ini berangkat ke model m_kelolauser
+            $livechat = $this->livechat->getFullData(session('id_user'), 0); // ini berangkat ke model m_livechat
+            $livechat_selesai = $this->livechat->getFullData(session('id_user'), 1); // ini berangkat ke model m_livechat
+        } else if (session('id_role') == 2) {
+            $livechat = $this->livechat->getFullData(null, 0, session('id_kategori')); // ini berangkat ke model m_livechat
+            $livechat_selesai = $this->livechat->getFullData(null, 1, session('id_kategori')); // ini berangkat ke model m_livechat
         } else {
-            $livechat = $this->livechat->getFullData();// ini berangkat ke model m_kelolauser
-            $livechat_selesai = $this->livechat->getFullData(null, 1);// ini berangkat ke model m_kelolauser
+            $livechat = $this->livechat->getFullData(); // ini berangkat ke model m_livechat
+            $livechat_selesai = $this->livechat->getFullData(null, 1); // ini berangkat ke model m_livechat
         }
         $data = [
             'title' => 'Livechat SIJAWARA', // title untuk di tampilkan di tab browser
-            'livechat' => $livechat, 
-            'livechat_selesai' => $livechat_selesai, 
+            'livechat' => $livechat,
+            'livechat_selesai' => $livechat_selesai,
         ];
         return view('livechat/v_livechat', $data); // ini akan mengarahkan ke folder views->livechat->v_livechat dengan membawa $data
     }
@@ -42,7 +45,7 @@ class c_livechat extends BaseController
     {
         // Menangkap nilai yang dikirim dari inputan dibungkus dalam 1 variable yaitu $data
         $data = [
-            
+
             // tanggal_aduan yang kiri adalah yang sesuai dengan kolom yang ada di tbl_livechat
             'tanggal_aduan' => $this->request->getPost('tanggal_aduan'), // tanggal_aduan yang kanan menangkap nilai dari input yang name nya tanggal_aduan
 
@@ -90,7 +93,7 @@ class c_livechat extends BaseController
     {
         // Menangkap nilai yang dikirim dari inputan dibungkus dalam 1 variable yaitu $data
         $data = [
-            
+
             // tanggal_aduan yang kiri adalah yang sesuai dengan kolom yang ada di tbl_livechat
             'tanggal_aduan' => $this->request->getPost('tanggal_aduan'), // tanggal_aduan yang kanan menangkap nilai dari input yang name nya tanggal_aduan
 

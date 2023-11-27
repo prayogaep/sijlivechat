@@ -46,7 +46,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="role_id" class="form-label">Role</label>
-                            <select class="form-control" name="role_id" id="role_id" onchange="render(this)" required>
+                            <select class="form-control" name="role_id" id="role_id" onchange='render(this, <?= $kategori; ?>)' required>
                                 <option value="" selected disabled>-Pilih Role-</option>
                                 <!-- $role ini yang di bawa dari $data yang ada di controller function create -->
                                 <?php foreach ($roles as $r) { ?>

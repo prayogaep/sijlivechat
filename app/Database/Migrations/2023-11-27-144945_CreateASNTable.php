@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateTableASN extends Migration
+class CreateASNTable extends Migration
 {
     public function up()
     {

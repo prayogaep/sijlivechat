@@ -11,14 +11,17 @@ class m_livechat extends Model
     protected $useAutoIncrement = true;
     protected $allowedFields    = ['kategori_id', 'user_id', 'keterangan', 'tanggal_aduan', 'operator_id', 'tanggal_selesai', 'status']; // Kolom yang diperbolehkan diisi dari inputan 
 
-    function getFullData($id=null, $status=0, $mark= 'detail') {
+    function getFullData($id=null, $status=0, $kategori = '',  $mark= 'detail') {
         $this->select('tbl_livechat.*, tbl_kategori.nama_kategori, tbl_user.username, tbl_asn.*');
         $this->join('tbl_kategori', 'tbl_livechat.kategori_id = tbl_kategori.id_kategori');
         $this->join('tbl_asn', 'tbl_livechat.user_id = tbl_asn.user_id');
-        $this->join('tbl_user', 'tbl_livechat.operator_id = tbl_user.id_user');
+        $this->join('tbl_user', 'tbl_livechat.operator_id = tbl_user.id_user', 'left');
         $this->where('tbl_livechat.status', $status);
         if ($id != null) {
             $this->where('tbl_livechat.user_id', $id);
+        }
+        if ($kategori != '') {
+            $this->where('tbl_livechat.kategori_id', $kategori);
         }
         if ($mark != 'detail') {
             return $this->get()->getRowArray();
