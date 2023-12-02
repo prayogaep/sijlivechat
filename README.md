@@ -1,5 +1,9 @@
 # Code Igninter 4 LiveChat App
 
+## Requirement
+1. php 8.1
+2. Composer
+
 ## Installation
 1. Setup .env
 2. Run Composer Install
