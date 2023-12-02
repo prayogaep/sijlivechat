@@ -24,5 +24,5 @@ php spark serve
 
 2. Run server live chat
 ```
-php public/index server
+php public/index.php server
 ```
