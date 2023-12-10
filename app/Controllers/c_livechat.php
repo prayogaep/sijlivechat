@@ -19,10 +19,12 @@ class c_livechat extends BaseController
         if (session('id_role') == 3) {
             $livechat = $this->livechat->getFullData(session('id_user'), 0); // ini berangkat ke model m_livechat
             $livechat_selesai = $this->livechat->getFullData(session('id_user'), 1); // ini berangkat ke model m_livechat
-        } else if (session('id_role') == 2) {
-            $livechat = $this->livechat->getFullData(null, 0, session('id_kategori')); // ini berangkat ke model m_livechat
-            $livechat_selesai = $this->livechat->getFullData(null, 1, session('id_kategori')); // ini berangkat ke model m_livechat
-        } else {
+        } 
+        // else if (session('id_role') == 2) {
+        //     $livechat = $this->livechat->getFullData(null, 0, session('id_kategori')); // ini berangkat ke model m_livechat
+        //     $livechat_selesai = $this->livechat->getFullData(null, 1, session('id_kategori')); // ini berangkat ke model m_livechat
+        // } 
+        else {
             $livechat = $this->livechat->getFullData(); // ini berangkat ke model m_livechat
             $livechat_selesai = $this->livechat->getFullData(null, 1); // ini berangkat ke model m_livechat
         }
