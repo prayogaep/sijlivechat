@@ -62,11 +62,16 @@ class Chat implements MessageComponentInterface
             $numRecv,
             $numRecv == 1 ? '' : 's'
         );
-
+        $splitMsg = explode('#photo_', $msg);
+        $photo = null;
+        if (count($splitMsg) > 1) {
+            $photo = $splitMsg[1];
+        }
         foreach ($this->clients as $client) {
             if ($from !== $client) {
                 $data = [
                     'message' => $msg,
+                    'photo' => $photo,
                     'author' => $from->user['username'],
                     'time' => date('H:i'),
                     'ticket' => $this->ticket,

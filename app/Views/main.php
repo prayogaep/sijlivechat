@@ -177,7 +177,7 @@
   <!-- ============================================================== -->
   <!-- All Jquery -->
   <!-- ============================================================== -->
-  
+
   <!-- Bootstrap tether Core JavaScript -->
   <script src="<?= base_url() ?>assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="<?= base_url() ?>assets/js/app-style-switcher.js"></script>
@@ -242,10 +242,10 @@
                             <input type="text" class="form-control" id="jabatan" value="${ obj.jabatan ? obj.jabatan : "" }" name="jabatan" required>
                         </div>
                 `);
-      } else if(val.value == 2) {
+      } else if (val.value == 2) {
         let option = '';
         for (let index = 0; index < obj.length; index++) {
-             option += `<option value="${obj[index].id_kategori}" ${opt.kategori_id == obj[index].id_kategori ? "selected" : ""}>${obj[index].nama_kategori}</option>`;
+          option += `<option value="${obj[index].id_kategori}" ${opt.kategori_id == obj[index].id_kategori ? "selected" : ""}>${obj[index].nama_kategori}</option>`;
         }
         $('.target').append(`<div class="mb-3">
                             <label for="kategori_id" class="form-label">Kategori Operator</label>
