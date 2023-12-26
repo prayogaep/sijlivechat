@@ -141,6 +141,7 @@
 
     <main class="form-signin w-100 m-auto">
         <form action="/login" method="post">
+            <img src="<?= base_url() ?>img/logo.png" width="100" height="100" class="rounded mx-auto d-block">
             <h1 class="mb-3 fw-normal text-center">SIJAWARA</h1>
             <h5 class="text-center">Silahkan Login</h5>
             <?php if (session('error')) { ?>

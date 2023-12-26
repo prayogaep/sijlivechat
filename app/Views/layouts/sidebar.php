@@ -47,6 +47,7 @@
 
         </nav>
         <!-- End Sidebar navigation -->
+        <img src="<?= base_url() ?>img/logo.png" width="200" height="200" class="rounded mx-auto d-block">
     </div>
     <!-- End Sidebar scroll-->
 </aside>
