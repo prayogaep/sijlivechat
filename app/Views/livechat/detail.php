@@ -201,7 +201,6 @@
                   </div>`
       $('#messages').append(html)
       scrollMsgBottom()
-
     }
 
     function myMessage(msg, imageUrl) {
