@@ -36,7 +36,7 @@ class c_laporan extends BaseController
             $waktu = '';
         }
         $id = null;
-        if (session('role_id') == 3) {
+        if (session('id_role') == 3) {
             $id = session('id_user');
         }
 

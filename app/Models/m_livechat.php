@@ -57,7 +57,7 @@ class m_livechat extends Model
     {
         $where = '';
         if ($id) {
-            $where = "AND id_user = '$id'";
+            $where = "AND user_id = '$id'";
         }
         $query = $this->db->query("SELECT id_user, username, (SELECT COUNT(*) FROM tbl_livechat b where a.id_user = b.operator_id AND b.tanggal_aduan like '%$waktu%' $where) total FROM tbl_user a WHERE role_id = 2;");
         return $query->getResult();
@@ -76,7 +76,11 @@ class m_livechat extends Model
         // $this->join('tbl_kategori', 'tbl_livechat.kategori_id = tbl_kategori.id_kategori');
         // $this->groupBy('kategori_id');
         // return $this->get()->getResult();
-        $query = $this->db->query("SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND b.tanggal_aduan like '%$waktu%') total FROM tbl_kategori a");
+        $where = '';
+        if ($id) {
+            $where = "AND user_id = '$id'";
+        }
+        $query = $this->db->query("SELECT *, (SELECT COUNT(*) FROM tbl_livechat b WHERE b.kategori_id = a.id_kategori AND b.tanggal_aduan like '%$waktu%' $where) total FROM tbl_kategori a");
         return $query->getResult();
     }
 
