@@ -11,7 +11,8 @@ class m_livechat extends Model
     protected $useAutoIncrement = true;
     protected $allowedFields    = ['kategori_id', 'user_id', 'keterangan', 'tanggal_aduan', 'operator_id', 'tanggal_selesai', 'status']; // Kolom yang diperbolehkan diisi dari inputan 
 
-    function getFullData($id=null, $status=0, $kategori = '',  $mark= 'detail') {
+    function getFullData($id = null, $status = 0, $kategori = '',  $mark = 'detail')
+    {
         $this->select('tbl_livechat.*, tbl_kategori.nama_kategori, tbl_user.username, tbl_asn.*');
         $this->join('tbl_kategori', 'tbl_livechat.kategori_id = tbl_kategori.id_kategori');
         $this->join('tbl_asn', 'tbl_livechat.user_id = tbl_asn.user_id');
@@ -37,18 +38,28 @@ class m_livechat extends Model
         return $this->get()->getRowObject();
     }
 
-    function getJumlahAduan($status = '', $waktu = ''){
+    function getJumlahAduan($status = '', $waktu = '', $id = null)
+    {
         if ($waktu != '') {
             $this->like('tanggal_aduan', $waktu);
         }
         if ($status != '') {
             $this->where('status', $status);
         }
+        
+        if ($id) {
+            $this->where('user_id', $id);
+        }
         return $this->countAllResults();
     }
 
-    function getJumlahAduanOperator($waktu = '') {
-        $query = $this->db->query("SELECT id_user, username, (SELECT COUNT(*) FROM tbl_livechat b where a.id_user = b.operator_id AND b.tanggal_aduan like '%$waktu%') total FROM tbl_user a WHERE role_id = 2;");
+    function getJumlahAduanOperator($waktu = '', $id = null)
+    {
+        $where = '';
+        if ($id) {
+            $where = "AND id_user = '$id'";
+        }
+        $query = $this->db->query("SELECT id_user, username, (SELECT COUNT(*) FROM tbl_livechat b where a.id_user = b.operator_id AND b.tanggal_aduan like '%$waktu%' $where) total FROM tbl_user a WHERE role_id = 2;");
         return $query->getResult();
         // $this->select("COUNT(*) total, operator_id, username");
         // $this->join('tbl_user', 'tbl_livechat.operator_id = tbl_user.id_user');
@@ -59,7 +70,8 @@ class m_livechat extends Model
         // $this->groupBy('operator_id');
         // return $this->get()->getResult();
     }
-    function getJumlahAduanKategori($waktu = '') {
+    function getJumlahAduanKategori($waktu = '', $id = null)
+    {
         // $this->select("COUNT(*) total, kategori_id, nama_kategori");
         // $this->join('tbl_kategori', 'tbl_livechat.kategori_id = tbl_kategori.id_kategori');
         // $this->groupBy('kategori_id');
@@ -68,7 +80,7 @@ class m_livechat extends Model
         return $query->getResult();
     }
 
-    function getJumlahAduanUser($id = '', $status='')
+    function getJumlahAduanUser($id = '', $status = '')
     {
         if ($status != '') {
             $this->where('status', $status);

@@ -8,7 +8,8 @@ class c_laporan extends BaseController
 {
     protected $livechat;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->livechat = new m_livechat();
     }
     public function index()
@@ -34,11 +35,16 @@ class c_laporan extends BaseController
         } else {
             $waktu = '';
         }
-        $jumlah_aduan = $this->livechat->getJumlahAduan('', $waktu);
-        $jumlah_aduan_selesai = $this->livechat->getJumlahAduan("1", $waktu);
-        $jumlah_aduan_belum_selesai = $this->livechat->getJumlahAduan("0", $waktu);
-        $jumlah_peroperator = $this->livechat->getJumlahAduanOperator($waktu);
-        $jumlah_perkategori = $this->livechat->getJumlahAduanKategori($waktu);
+        $id = null;
+        if (session('role_id') == 3) {
+            $id = session('id_user');
+        }
+
+        $jumlah_aduan = $this->livechat->getJumlahAduan('', $waktu, $id);
+        $jumlah_aduan_selesai = $this->livechat->getJumlahAduan("1", $waktu, $id);
+        $jumlah_aduan_belum_selesai = $this->livechat->getJumlahAduan("0", $waktu, $id);
+        $jumlah_peroperator = $this->livechat->getJumlahAduanOperator($waktu, $id);
+        $jumlah_perkategori = $this->livechat->getJumlahAduanKategori($waktu, $id);
 
         $data = [
             'title' => 'Laporan',
