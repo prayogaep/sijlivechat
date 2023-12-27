@@ -209,11 +209,15 @@
       var minutes = date.getMinutes();
       var hour = date.getHours();
       var time = hour + ':' + minutes
+      var image = "";
+      if (imageUrl) {
+        image += `<img src="${imageUrl}" width="100" height="100">`;
+      }
       html = `<div class="col-8 msg-item right-msg offset-4">
                     <div class="msg-text">
                       <span class="author">Me</span> <span class="time">` + time + `</span><br>
                       <p>` + msg + `</p>
-                      <img src="${imageUrl}" width="100" height="100">
+                      ${image}
                     </div>
                   </div>`
       $('#messages').append(html)
