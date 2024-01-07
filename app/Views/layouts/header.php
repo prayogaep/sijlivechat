@@ -1,10 +1,21 @@
 <header class="topbar" data-navbarbg="skin5">
     <nav class="navbar top-navbar navbar-expand-md navbar-dark">
         <div class="navbar-header">
+            <style>
+                .header-link {
+                    font-size: 18px; margin-left: 10px;
+                }
+                @media only screen and (max-width: 900px) {
+                     .header-link {
+                        font-size: 10px;
+                        margin-left: 3px;
+                    }
+                }
+            </style>
             <!-- ============================================================== -->
             <!-- Logo -->
             <!-- ============================================================== -->
-            <h4 class="text-center text-white fw-bold mt-2" style="font-size: 26px; margin-left: 10px;">SIJAWARA</h4>
+            <h4 class="text-center text-white fw-bold mt-2 header-link">SIJAWARA</h4>
             <!-- ============================================================== -->
             <!-- End Logo -->
             <!-- ============================================================== -->
@@ -28,7 +39,7 @@
                 <!-- ============================================================== -->
                 <li>
                     <a class="profile-pic" href="#">
-                        <span class="text-white font-medium"><?= session('username') ?> - <?= session('nama_role') . ' ' . session('nama_kategori')?></span></a>
+                        <span class="text-white font-medium"><?= session('username') ?> - <?= session('nama_role') . ' ' . session('nama_kategori') ?></span></a>
                 </li>
                 <!-- ============================================================== -->
                 <!-- User profile and search -->
