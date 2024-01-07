@@ -47,7 +47,14 @@
 
         </nav>
         <!-- End Sidebar navigation -->
-        <img src="<?= base_url() ?>img/logo.png" width="200" height="200" class="rounded mx-auto d-block">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+         <img src="<?= base_url() ?>img/logo.png" width="460" height="345" class="rounded mx-auto d-block">
     </div>
     <!-- End Sidebar scroll-->
 </aside>

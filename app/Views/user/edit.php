@@ -106,6 +106,7 @@
                             <?php } ?>
                         </div>
                         <button type="submit" class="btn btn-primary">Update</button>
+                        <a href="<?= base_url('/user');?>" class="btn btn-primary">Cancel<a/>
                     </form>
 
                 </div>

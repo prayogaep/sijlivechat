@@ -107,8 +107,12 @@
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
+
+<!-- ======================== Livechat =================================== -->
 <script>
   $(document).ready(function() {
+
+    // ini untuk penghubung ke socket
     var conn = new WebSocket('ws://localhost:8081?access_token=<?= session()->get('id_user') ?>&ticket=<?= $livechat->id_livechat ?>');
     $(function() {
       scrollMsgBottom()
@@ -121,10 +125,12 @@
 
     $(function() {
 
+      //ini dijalankan saat pertama kali user mengkases livechat
       conn.onopen = function(e) {
         console.log("Connection established!");
       };
 
+      // untuk mengirim dan menerima pesan
       conn.onmessage = function(e) {
         let data = JSON.parse(e.data)
         console.log(data);
@@ -133,6 +139,8 @@
           // if (data.ticket == "<?= $livechat->id_livechat ?>" && data.connect == 'connecting') {
           // }
         } else if ('message' in data) {
+
+
           newMessage(data)
           // if (data.ticket == "<?= $livechat->id_livechat ?>" && data.connect == 'sending') {                
           // }

@@ -41,6 +41,7 @@
                             <input type="text" class="form-control" id="nama_kategori" name="nama_kategori" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="<?= base_url('/kategori');?>" class="btn btn-primary">Cancel<a/>
                     </form>
 
                 </div>

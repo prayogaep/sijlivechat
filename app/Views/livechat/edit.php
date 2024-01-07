@@ -56,6 +56,7 @@
                             <textarea name="keterangan" id="keterangan" class="form-control" cols="30" rows="5"><?= $livechat['keterangan']; ?></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        <a href="<?= base_url('/livechat');?>" class="btn btn-primary">Cancel<a/>
                     </form>
 
                 </div>
